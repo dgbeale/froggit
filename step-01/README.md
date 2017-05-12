@@ -11,5 +11,6 @@
     WIDTH = 640  
     HEIGHT = 320  
 9. Test that the window is of the required size
-10. We now need to draw something, we create a **draw** function. Which pgzero will call 
+10. We now need to draw something, we create a **draw** function. Which pgzero will call whenever it needs to repaint the screen.  
+
 
