@@ -10,6 +10,6 @@
 8. Let's set the screen size:
     WIDTH = 640
     HEIGHT = 320
-9. Test
+9. Test that the window is of the required size
 10. We now need to draw something, we create a **draw** function. Which pgzero will call 
 
