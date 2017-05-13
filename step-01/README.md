@@ -1,5 +1,8 @@
 # froggit step 01
 
+# This step will just get the initial window showing
+
+
 1. Within the froggit folder, create a folder called step-01
 2. Start Python IDLE
 3. Start a Windows Command Line session - position IDLE and Command next to each other
