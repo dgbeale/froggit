@@ -7,7 +7,7 @@
 3. If not already - Start Python IDLE
 4. If not already - Start a Windows Command Line session - position IDLE and Command next to each other
 5. Within the command line session, navigate to the step-01 folder (cd  _HOME_ froggit/step-02)
-6. Download the images folder from this githib directory to your step-02 folder
+6. Download the images folder from this githib directory to your step-02 folder (thanks to www.gameartguppy.com)
 7.  
 
 
