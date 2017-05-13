@@ -11,6 +11,8 @@ frog.pos = (320,100)
 
 
 # Run Handling
+def update():
+    frog.y -= 5
 
 
 # Update the display

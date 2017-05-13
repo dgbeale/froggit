@@ -18,6 +18,14 @@ frog = Actor("frog1") .
 frog.pos(320,100)
 10. Draw the frog, last line within the draw function.
 frog.draw() 
+11. Test the code
+12. No we need to animate the frog, create a new function called update (this is called by PGZero). Decrease the Y value by 5 . 
+def update():
+    frog.y -= 5
+
+13. 
+
+
 
 
 
