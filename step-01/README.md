@@ -15,5 +15,9 @@
     HEIGHT = 320  
 9. Test that the window is of the required size
 10. We now need to draw something, we create a **draw** function. Which pgzero will call whenever it needs to repaint the screen.  
+def draw():
+    screen.fill((0,230,255))
+
+    This passes the RGB value to the screen object's fill method, This sets the colour to a light blue.
 
 

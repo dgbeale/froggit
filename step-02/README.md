@@ -14,16 +14,19 @@
 
 8. Declare variable for the frog within declararions section - this is a special type called Actor. We will passed it the name of the frog image we require.  
 frog = Actor("frog1") . 
-9. Set the initial position of the frog udnerneath . 
+9. Set the initial position of the frog udnerneath.   
 frog.pos(320,100)
-10. Draw the frog, last line within the draw function.
+10. Draw the frog, last line within the draw function.  
 frog.draw() 
 11. Test the code
 12. No we need to animate the frog, create a new function called update (this is called by PGZero). Decrease the Y value by 5 . 
-def update():
+def update():  
     frog.y -= 5
-
-13. 
+13. Test the code
+14. You will notice that the forg disappear off the screen never to be seen again. We need to reset the y value if we detect that the frog has gone off the screen.  
+At the end of the update function, add these lines  
+if frog.y < 0:
+    frog.y = HEIGHT + FROG.height
 
 
 
