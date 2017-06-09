@@ -25,8 +25,11 @@ def update():
 13. Test the code
 14. You will notice that the forg disappear off the screen never to be seen again. We need to reset the y value if we detect that the frog has gone off the screen.  
 At the end of the update function, add these lines  
-if frog.y < 0:
-    frog.y = HEIGHT + FROG.height
+if frog.y < 0:  
+    frog.y = HEIGHT + frog.height  
+
+modify the initial positioning of the frog.  
+frog.pos(320,HEIGHT + frog.height )
 
 
 
