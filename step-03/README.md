@@ -3,7 +3,7 @@
 # We can now start applying some animation to the frog
 
 1. To control the animation, we create a new variable call frame, and set to 1   
-   frog.frame = 1  
+    frog.frame = 1  
 2. Create a new function that make the frog 'hop'.  
 Increate the frame value each time the funcation is called.  
   def frog_hop:  
@@ -18,7 +18,13 @@ But because we only have 7 images, we should reset back to 1 after 7
      frog.image = "frog" + str(frog.frame)  
 3. Now we need to call this function, so add this to the first line in the update function  
      frog_hop()
-
+4. Noe test the code.
+5. Once this is running successfully, you will see that it's a bit too fast, we need to slow it down.
+6. So, in our frog_hop section, instead of incrementing the frame by 1, let's increment by 0.5  
+  frog.frame += 0.5
+7. But we have now image with '.5' in the name, so we'll add an int function when using the frame value.  
+  frog.image = "frog" + str(int(frog.frame))
+ 
 
 
 

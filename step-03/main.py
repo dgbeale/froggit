@@ -8,10 +8,11 @@ frog.frame = 1
 
 def frog_hop():
     if frog.frame < 7:  
-          frog.frame += 1  
+          frog.frame += 0.5 
     else:
-          frog.frame = 1  
-    frog.image = "frog" + str(frog.frame) 
+          frog.frame = 1
+    frog.image = "frog" + str(int(frog.frame))
+  
 
 
 ''' game loop '''
