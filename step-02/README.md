@@ -31,6 +31,9 @@ if frog.y < 0:
 modify the initial positioning of the frog.  
     frog.pos(320,HEIGHT + frog.height )
 
+15. Now test the code   
+
+
 
 
 
