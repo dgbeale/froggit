@@ -13,13 +13,13 @@
 ''' Game Loop '''   A few lines underneath
 
 8. Declare variable for the frog within declararions section - this is a special type called Actor. We will passed it the name of the frog image we require.  
-frog = Actor("frog1") . 
+    frog = Actor("frog1") . 
 9. Set the initial position of the frog udnerneath.   
-frog.pos(320,100)
+    frog.pos(320,100)
 10. Draw the frog, last line within the draw function.  
-frog.draw() 
+    frog.draw() 
 11. Test the code
-12. No we need to animate the frog, create a new function called update (this is called by PGZero). Decrease the Y value by 5 . 
+12. No we need to animate the frog, create a new function called update (this is called by PGZero). Now we should decrease the Y value by 5 every time the screen is updated.   
 def update():  
     frog.y -= 5
 13. Test the code
@@ -29,7 +29,7 @@ if frog.y < 0:
     frog.y = HEIGHT + frog.height  
 
 modify the initial positioning of the frog.  
-frog.pos(320,HEIGHT + frog.height )
+    frog.pos(320,HEIGHT + frog.height )
 
 
 
