@@ -7,6 +7,7 @@ HEIGHT=320
 frog = Actor("frog1")
 frog.pos = (0, -500)
 frog.frame = 1
+frog.is_alive = True
 
 def frog_hop():
     if frog.frame < 7:  
@@ -23,14 +24,20 @@ def frog_reset():
     y = randint(HEIGHT + frog.height // 2, HEIGHT * 2)
     frog.pos = (x,y)
 
-
-# Run Handling
+def on_mouse_down(pos):
+    if frog.collidepoint(pos):
+        frog_hit()
+        
+def frog_hit():
+    frog.is_alive = False
+    frog.image = "frog_dead"
 
 def update():
-    frog_hop()
-    frog.y -= 5
-    if frog.y < 0:
-        frog_reset()
+    if frog.is_alive:
+        frog_hop()
+        frog.y -= 5
+        if frog.y < 0:
+            frog_reset()
 
 
 # Update the display
