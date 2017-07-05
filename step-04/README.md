@@ -1,6 +1,6 @@
 # froggit step 04
 
-# Let's now get the forg appearing in random places
+# Let's now get the frog appearing in random places
 
 1. Now we need the frog to appear in random places.  
 2. We need to use the python library, random. At the top of the code, on the first line of your code add   
