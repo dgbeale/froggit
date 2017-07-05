@@ -10,7 +10,7 @@ from random import randint
   x = randint(0 + frog.width//2, WIDTH - frog.width//2)
 5. For the y co-ordinate (the horizontal position), we will also create a a random value. The min should be the HEIGHT of the screen, the max can be a large value so that the frog can be seem to appear at different times, we can use frog.height * 2
 6. So the frog_reset function should look like this  
-def frog_reset():  
+def frog_reset():   
     x = randint(0 + frog.width // 2, WIDTH - frog.width // 2)  
     y = randint(HEIGHT + frog.height // 2, HEIGHT * 2)  
     frog.pos = (x,y)  
