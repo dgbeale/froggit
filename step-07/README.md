@@ -11,7 +11,7 @@ frog4 = Actor("frog1")
 ```
 2. After these variables, let's create an array (list) to store all our frogs
 ```
- frogs = [forg1,forg2,frog3,frog4]
+ frogs = [frog1,frog2,frog3,frog4]
 ```
 3. We now need to change the code that previously used the frog variable to now user the array, using a **for** loop 
 ```
