@@ -5,10 +5,16 @@ WIDTH=640
 HEIGHT=320
 
 ''' declarations '''
-frog = Actor("frog1")
-frog.pos = (0, -500)
-frog.frame = 1
-frog.is_alive = True
+frog1 = Actor("frog1")
+frog2 = Actor("frog1")
+frog3 = Actor("frog1")
+frog4 = Actor("frog1")
+
+for frog in frogs:
+    frog.pos = (0, -500)
+    frog.frame = 1
+    frog.is_alive = True
+
 score = 1
 
 def frog_hop():
@@ -29,7 +35,7 @@ def frog_reset():
 
 def on_mouse_down(pos):
     if frog.collidepoint(pos):
-        frog_hit()
+        frog_hit(frog)
         
 def frog_hit():
     global score
@@ -40,12 +46,13 @@ def frog_hit():
 
 def update():
     global score
-    if frog.is_alive:
-        frog_hop()
-        frog.y -= 5
-        if frog.y < 0:
-            score -= 1
-            frog_reset()
+    for frog in frogs:
+        if frog.is_alive:
+            frog_hop(frog)
+            frog.y -= 5
+            if frog.y < 0:
+                score -= 1
+                frog_reset(frog)
 
 
 # Update the display
