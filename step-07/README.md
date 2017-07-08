@@ -20,7 +20,7 @@ for frog in frogs:
     frog.frame = 1
     frog.is_alive = True
 ```
-4. In the update method, add a for loop - and pass the frog variable to forg_hop function
+4. In the update function, add a for loop - and pass the frog variable to forg_hop function
 ```
 for frog in frogs:
         if frog.is_alive:
@@ -28,9 +28,9 @@ for frog in frogs:
             frog.y -= 5
             if frog.y < 0:
                 score -= 1
-                frog_reset()
+                frog_reset(frog)
 ```
-5.
+5. Change frog_reset, frog_hop frog_hit functions to accept frog as a parameter
 
 
 
