@@ -34,11 +34,25 @@ def frog_reset(frog):
     y = randint(HEIGHT + frog.height // 2, HEIGHT * 2)
     frog.pos = (x,y)
 
+def frog1_reset(): frog_reset(frog1)
+def frog2_reset(): frog_reset(frog2)
+def frog3_reset(): frog_reset(frog3)
+def frog4_reset(): frog_reset(frog4)
+
+
 def on_mouse_down(pos):
-    for frog in frogs:
-        if frog.collidepoint(pos):
-            frog_hit(frog)
-            clock.schedule_unique(frog_reset(frog),1.0)
+    if frog1.collidepoint(pos):
+            frog_hit(frog1)
+            clock.schedule_unique(frog1_reset,1.0)
+    elif frog2.collidepoint(pos):
+            frog_hit(frog2)
+            clock.schedule_unique(frog2_reset,1.0)
+    elif frog3.collidepoint(pos):
+            frog_hit(frog3)
+            clock.schedule_unique(frog3_reset,1.0)
+    elif frog4.collidepoint(pos):
+            frog_hit(frog4)
+            clock.schedule_unique(frog4_reset,1.0)
 
         
 def frog_hit(frog):

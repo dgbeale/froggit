@@ -19,11 +19,17 @@ def on_mouse_down(pos):
  frog.is_alive = True  
 ```
 4. Create a new function called frog_hit. Set the image of the frog to frog_dead, and set is_alive to False.  
+```
  def frog_hit():  
+    frog.is_alive = False
+    frog.image = "frog_dead"
+```
+ 6. Test the code
 
- 6. test
-
- 7. clock
+ 7. The frog should now appear dead, but we only want this to be temporary, we would like to come back alive after a short period. We send an event that will wait one second and the reset the frog. At the end of  the frog_hit function add the following line:
+```
+  clock.schedule_unique(frog_reset,1.0)
+```
 
 
 

@@ -30,6 +30,7 @@ for frog in frogs:
                 score -= 1
                 frog_reset()
 ```
+5.
 
 
 
