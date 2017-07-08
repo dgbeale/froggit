@@ -9,7 +9,7 @@
 from random import randint
 ```
 3. Create a new function called frog_reset, here we will randomly set the x and y co-ordinates.
-4. randint reqires a range - min and maximum, for x (horizontal position) the min should be 0 but we don't want the frog to appear half off the screen. For the max, we want to use the width of the screen - but take into account the width of the frog.    
+4. randint requires a range - min and maximum, for x (horizontal position) the min should be 0 but we don't want the frog to appear half off the screen. For the max, we want to use the width of the screen - but take into account the width of the frog.    
 ```
   x = randint(0 + frog.width//2, WIDTH - frog.width//2)
 ```
@@ -23,7 +23,17 @@ def frog_reset():
     frog.pos = (x,y)  
 
 ```
-7. We now need to replace the two pieces of code where we set the frog position.    
+7. We now need to call the reset method when the frog goes off the screen. In the update method, it should look like this
+```
+  if frog.y < 0:
+        frog_reset()
+```
+8. Change the initial frog position to be off the screen
+```
+frog.pos = (0, -500)
+```
+9. Now test the code
+
 
 
 

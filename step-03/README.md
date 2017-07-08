@@ -18,6 +18,7 @@ Use this value, to retrireve  a different image of the frog (we have 7 frog imag
 ```
 But because we only have 7 images, we should reset back to 1 after 7  
 ```
+def frog_hop:
      if frog.frame < 7:  
         frog.frame += 1  
      else

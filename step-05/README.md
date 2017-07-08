@@ -30,6 +30,7 @@ def on_mouse_down(pos):
 ```
   clock.schedule_unique(frog_reset,1.0)
 ```
+8. Test the code
 
 
 
