@@ -18,14 +18,13 @@ def on_mouse_down(pos):
 ```
  frog.is_alive = True  
 ```
-4. Create a new function called frog_hit. Set the image of the frog to frog_dead, and set is_alive to False.  
+5. Create a new function called frog_hit. Set the image of the frog to frog_dead, and set is_alive to False.  
 ```
  def frog_hit():  
     frog.is_alive = False
     frog.image = "frog_dead"
 ```
-5.
-Modify the update function, make the code to only be executed if the is_alive fliag is True.
+6. Modify the update function, make the code to only be executed if the is_alive fliag is True.
 ```
 def update():
     if frog.is_alive:
