@@ -24,7 +24,8 @@ def on_mouse_down(pos):
     frog.is_alive = False
     frog.image = "frog_dead"
 ```
-6. Modify the update function, make the code to only be executed if the is_alive fliag is True.
+6. Modify the update function so that the code is only be executed if the is_alive flag is True.
+We do not want to animate a dead frog!
 ```
 def update():
     if frog.is_alive:
