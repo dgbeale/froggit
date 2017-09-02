@@ -9,7 +9,7 @@
 2. Create a new function that make the frog 'hop'.  
 Increase the frame value each time the funcation is called.  
 ```
-  def frog_hop:  
+  def frog_hop():  
      frog.frame += 1  
 ```
 Use this value, to retrireve  a different image of the frog (we have 7 frog images)  
@@ -18,7 +18,7 @@ Use this value, to retrireve  a different image of the frog (we have 7 frog imag
 ```
 But because we only have 7 images, we should reset back to 1 after 7  
 ```
-def frog_hop:
+def frog_hop():
      if frog.frame < 7:  
         frog.frame += 1  
      else

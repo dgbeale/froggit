@@ -28,6 +28,7 @@ def frog_reset():
     frog.pos = (x,y)
 
 def on_mouse_down(pos):
+    pdb.set_trace()
     if frog.collidepoint(pos):
         frog_hit()
         
