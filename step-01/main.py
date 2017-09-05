@@ -2,4 +2,4 @@ WIDTH=640
 HEIGHT=320
 
 def draw():
-    screen.fill((0,230,255))
+    screen.fill((255,0,0))

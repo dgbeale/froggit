@@ -28,7 +28,6 @@ def frog_reset():
     frog.pos = (x,y)
 
 def on_mouse_down(pos):
-    pdb.set_trace()
     if frog.collidepoint(pos):
         frog_hit()
         
@@ -54,4 +53,4 @@ def draw():
     global score
     screen.fill((0,230,255))
     frog.draw()
-    screen.draw.text(str(score), (WIDTH//2 - 20 , 0)
+    screen.draw.text(str(score), (WIDTH//2 - 20 , 0))

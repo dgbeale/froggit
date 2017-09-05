@@ -37,9 +37,13 @@ def update():
 ```
  6. Test the code
 
- 7. The frog should now appear dead, but we only want this to be temporary, we would like to come back alive after a short period. We send an event that will wait one second and the reset the frog. At the end of  the frog_hit function add the following line:
+ 7. The frog should now appear dead, but we only want this to be temporary, we would like it to come back alive after a short period. We send an event that will wait one second and the reset the frog. At the end of  the frog_hit function add the following line:
 ```
   clock.schedule_unique(frog_reset,1.0)
+```
+We also need to set the is_alive flag back to True at the the beginning of the frog_reset function.  
+```
+frog.is_alive = True
 ```
 8. Test the code
 

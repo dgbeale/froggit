@@ -11,6 +11,8 @@ score = 0
  score += 1
 ```
 3. Everytime the frog goes off the screen, decrement the score. 
-
-`
+```
+score -= 1
+```
+4.
 
