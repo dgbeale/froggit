@@ -1,6 +1,6 @@
 # froggit step 07
 
-# Now everything working with 1 frog, let's now have 4 frogs
+# Now everything is working with 1 frog, let's now have 4 frogs
   
 1. Lets modify our frog variable to frog1 and add 3 more. But they wil still use the image frog1 
 ```
@@ -20,7 +20,7 @@ for frog in frogs:
     frog.frame = 1
     frog.is_alive = True
 ```
-4. In the update function, add a for loop - and pass the frog variable to forg_hop function
+4. In the update function, add a for loop - and pass the frog variable to frog_hop function
 ```
 for frog in frogs:
         if frog.is_alive:

@@ -6,8 +6,8 @@
 ```  
     frog.frame = 1  
 ```
-2. Create a new function that make the frog 'hop'.  
-Increase the frame value each time the funcation is called.  
+2. Create a new function that makes the frog 'hop'.  
+Increase the frame value each time the function is called.  
 ```
   def frog_hop():  
      frog.frame += 1  
@@ -25,7 +25,7 @@ def frog_hop():
         frog.frame = 1  
      frog.image = "frog" + str(frog.frame)  
 ```
-3. Now we need to call this function, so add this to the first line in the update function  
+3. Now we need to call the new hop function, so add this as the first line in the update function  
 ```
      frog_hop()
 ```
