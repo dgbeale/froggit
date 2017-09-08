@@ -59,6 +59,7 @@ def frog2_reset(): frog_reset(frog2)
 def frog3_reset(): frog_reset(frog3)
 def frog4_reset(): frog_reset(frog4)
 ```
-Each of the new reset functions, call the original frog_reset function, pass the the specific frog object as a variable.  
+Each of the new reset functions, call the original frog_reset function, passing  the specific frog object as a variable.  
 8. Please test the new code
+
 
