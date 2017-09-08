@@ -31,6 +31,34 @@ for frog in frogs:
                 frog_reset(frog)
 ```
 5. Change frog_reset, frog_hop frog_hit functions to accept frog as a parameter
-
-
+6. We now need to modify the logic within the mouse_down function. Currently it looks like this :
+```
+if frog.collidepoint(pos):
+        frog_hit()
+```
+It checks wether the position of the mouse is within the frog.
+So now, we will need to check each frog, unfortunately it's not possible to do this in a loop, so we need to replace the above with this :
+```
+if frog1.collidepoint(pos):
+            frog_hit(frog1)
+            clock.schedule_unique(frog1_reset,1.0)
+    elif frog2.collidepoint(pos):
+            frog_hit(frog2)
+            clock.schedule_unique(frog2_reset,1.0)
+    elif frog3.collidepoint(pos):
+            frog_hit(frog3)
+            clock.schedule_unique(frog3_reset,1.0)
+    elif frog4.collidepoint(pos):
+            frog_hit(frog4)
+            clock.schedule_unique(frog4_reset,1.0)
+```
+7. As you can see above, each frog now has it's own reset function. So we need to add the following code, below the existing frog_reset function.
+```
+def frog1_reset(): frog_reset(frog1)
+def frog2_reset(): frog_reset(frog2)
+def frog3_reset(): frog_reset(frog3)
+def frog4_reset(): frog_reset(frog4)
+```
+Each of the new reset functions, call the original frog_reset function, pass the the specific frog object as a variable.
+8. Please test the new code
 

@@ -41,7 +41,6 @@ def frog4_reset(): frog_reset(frog4)
 
 
 def on_mouse_down(pos):
-    pdb.set_trace()
     if frog1.collidepoint(pos):
             frog_hit(frog1)
             clock.schedule_unique(frog1_reset,1.0)
